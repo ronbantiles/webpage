@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .home {
+            height: 100vh;
+            background-image: url('images/download.gif');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .home::before {
+            content: "";
+            position: absolute;
+                top: 0;
+                left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .home-content {
+            padding: 50px;
+            text-align: center;
+            color: white;
+            position: relative; 
+            z-index: 1;
+        }
+        .social-media a {
+            color: #fff;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a> 
+        </nav>
+    </header>
+    <section class="home" id="home"> 
+        <div class="home-content">
+            <h3>Hello, It's Us</h3>
+            <h2>Georgina H. Arriesgado & Ron Mickael C. Bantiles</h2>
+            <h3>And We Are <span>I.T Students</span></h3>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="About" id="about">
+        <div class="about-img">
+            <img src="images/about.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Us</span></h2>
+            <h2></h><p>As adventurous souls, We are constantly drawn to the boundless realms of creativity, with singing serving as our steadfast compass through life's diverse landscapes. From the tender melodies of ballads to the exuberant rhythms of upbeat anthems, each song becomes an odyssey, weaving tales of our experiences and emotions into a harmonious tapestry that resonates with the very essence of existence. With every note, We embark on a voyage of self-discovery, forging connections that transcend the confines of space and time, uniting hearts in a symphony of shared humanity.</p></h2>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading"><span>Skills</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Front-End Development</h3>
+                <p>Expertise in creating responsive and visually appealing user interfaces using HTML, CSS, JavaScript, and frameworks like React and Angular.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Back-End Development</h3>
+                    <p>Proficient in server-side development with Node.js, Express, Python (Django/Flask), and PHP to build robust and scalable applications.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="services-container">
+                    <div class="services-box">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Website Security</h3>
+                        <p>Ability to implement security measures, including SSL encryption, input validation, and secure authentication, to protect web applications.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+        </div>
+    </section>
+
+    <section class="hobbies" id="hobbies">
+        <h2 class="heading"><span>Hobbies</span></h2>
+
+        <div class="hobbies-container">
+            <div class="hobbies-box">
+                <img src="images/p1.jfif" alt="">
+                <div class="hobbies-layer">
+                    <h4>Playing Video Games</h4>
+                    <i class='bx bx-desktop' style='color:#ffffff' ></i>
+                </div>
+            </div> 
+            <div class="hobbies-box">
+                <img src="images/p2.jfif" alt="">
+                <div class="hobbies-layer">
+                    <h4>Playing Guitar</h4>
+                    <i class='bx bxs-music' style='color:#ffffff' ></i>
+                </div>
+            </div>    
+            <div class="hobbies-box">
+                <img src="images/p3.jfif" alt="">
+                <div class="hobbies-layer">
+                    <h4>Sleeping</h4>
+                    <i class='bx bxs-bed' style='color:#ffffff' ></i>
+                </div>
+            </div>    
+            <div class="hobbies-box">
+                <img src="images/p4.jfif" alt="">
+                <div class="hobbies-layer">
+                    <h4>Watching Anime</h4>
+                    <i class='bx bxs-movie' style='color:#ffffff' ></i>
+                </div>
+            </div> 
+            
+            <section class="contact" id="contact">
+                <div class="contact-content">
+                    <h2 class="heading">Contact<span>Us!</span></h2>
+            
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Full name">
+                            <input type="email" placeholder="Email Address">
+                        </div>
+                        <div class="input-box">
+                            <input type="number" placeholder="Mobile number">
+                            <input type="text" placeholder="Email subject">
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send Message" class="btn">
+                    </form>
+                </div>
+            </section>    
+        
+        <footer class="footer">
+            <div class="footer-text">
+            <p>Copyright &copy; 2025 by Mikay and Gin | All Rights Reserved</p>
+            </div>
+            </div>
+        </footer>
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
